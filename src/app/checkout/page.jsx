@@ -1,4 +1,4 @@
-const Login = () => {
+const Checkout = () => {
     return (
         <>
             <p>order</p>
@@ -6,4 +6,4 @@ const Login = () => {
     )
 }
 
-export default Login;
+export default Checkout;
