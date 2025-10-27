@@ -1,11 +1,15 @@
 import Image from 'next/image';
 import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import Banner from '@/components/ui/Banner';
+import BrowserTheRange from '@/components/ui/BrowserTheRange';
 const HomePage = () => {
   return (
     <>
     <Header/>
-    <h1>Hello</h1>
-    <p>this is home page of my first Next.js app</p>
+    <Banner/>
+    <BrowserTheRange/>
+    <Footer/>
     </>
   )
 }

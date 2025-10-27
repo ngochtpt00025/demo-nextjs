@@ -1,4 +1,4 @@
-const UProduct = () => {
+const UProduct = (Product) => {
     return (
         <>
             <p>order</p>
