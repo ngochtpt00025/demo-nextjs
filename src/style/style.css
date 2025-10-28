@@ -80,7 +80,6 @@ body {
 
 .nav-link:hover {
     color: #B88E2F;
-    font-weight: 500;
 }
 
 .header-actions {
@@ -291,7 +290,7 @@ body {
     width: 100%;
     max-width: 1590px;
     margin: 0 auto;
-    background-image: url('/assets/images/banner/hero-banner.png');
+    background-image: url('/assets/images/banner.png');
     background-size: cover;
     background-position: center;
     height: 716px;
