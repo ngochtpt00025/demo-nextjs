@@ -1,7 +1,7 @@
 'use client'
 import CartItem from "./CartItem";
 import { useCart } from "./CartContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 const CartOffcanvas = () => {
@@ -34,13 +34,12 @@ const CartOffcanvas = () => {
         return () => document.body.classList.remove('no-scroll');
     }, [isOpen])
 
-    if(!isOpen) return null;
     let listItem = cart.map((c, i) => <CartItem key={i} item={c} />);
 
     return (
         <>
             <div className={`backdrop ${isOpen ? 'show' : 'hidden'}`} onClick={close} id="backdrop"></div>
-            <div className={`offcanvas offcanvas-end ${isOpen ? 'show' : ''}`} tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div className={`offcanvas offcanvas-end ${isOpen ? 'show' : 'hide'}`} tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div className="offcanvas-header border-bottom pb-4">
                     <h5 id="offcanvasRightLabel">Shopping Cart</h5>
                     <button type="button" id="close-offcanvas-cart" onClick={close} data-bs-dismiss="offcanvas">
